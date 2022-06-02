@@ -1,1 +1,7 @@
 <p>register works!</p>
+
+<div class="mb-3">
+    <label class="form-label">Email address</label>
+    <input type="email" class="form-control" placeholder="Your email" name="email" ngModel required>
+    <span class="form-text danger" *ngIf="emailExists()">This email already exists. Please try with another one</span>
+  </div>

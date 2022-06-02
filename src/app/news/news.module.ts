@@ -5,6 +5,7 @@ import { NewsRoutingModule } from './news-routing.module';
 import { NewsComponent } from './news/news.component';
 import { MyNewsComponent } from './my-news/my-news.component';
 import { FriendNewsComponent } from './friend-news/friend-news.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FriendNewsComponent } from './friend-news/friend-news.component';
   ],
   imports: [
     CommonModule,
-    NewsRoutingModule
+    NewsRoutingModule,
+    FormsModule
   ]
 })
 export class NewsModule { }

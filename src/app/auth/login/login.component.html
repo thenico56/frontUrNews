@@ -1,1 +1,26 @@
-<p>login works!</p>
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card border-dark mb-3">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <p class="text-danger"> error</p>
+                <form (ngSubmit)="submit()" #form="ngForm">
+                    <div class="form-goup p-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="Your email" name="email" [ngModel]="User.email" required>
+                    </div>
+                    <div class="form-goup p-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" placeholder="Password" class="form-control" name="pass" [ngModel]="User.pass" required minlength="5">
+                    </div>
+                    <div class="p-3">
+                        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	

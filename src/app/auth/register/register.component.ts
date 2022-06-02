@@ -13,4 +13,6 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  emailExists() {}
+
 }
